@@ -1,0 +1,298 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 70rem;
+    background-color: #20222F;
+    margin: 0 auto;
+    margin-top: 6rem;
+    height: 50rem;
+    border-radius: 3px;
+}
+
+.title{
+    font-size: 2rem;
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+}
+
+.budget{
+    padding: 4rem 2rem;
+    position: relative;
+}
+
+.budget__input{
+    display: inline-block;
+    position: absolute;
+    left: 2rem;
+    top: 3rem;
+
+}
+
+.budget__input--value{
+    width: 19rem;
+    padding: 1rem 0 1rem .5rem;
+    text-transform: capitalize;
+    border-radius: .4rem;
+    background-color: #FFF;
+    margin-right: 1rem;
+    font-size: 1.4rem;
+}
+
+.budget__input--value:focus{
+    outline: none;
+}
+
+.budget__input--icon{
+    font-size: 3.5rem;
+    color: #FFF;
+    vertical-align: middle;
+    font-weight: 100;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.budget__input--icon:focus{
+    outline: none;
+}
+
+.budget__input--icon:hover{
+    transform: translateY(-.5rem);
+}
+
+.budget__input--icon:active{
+    transform: translateY(.3rem);
+}
+
+.budget__value{
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    padding: .5rem 3rem 2rem 3rem;
+    background-color: #252B43;
+    display: inline-block;
+    border-radius: .4rem;
+}
+
+.budget__value--text{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    margin-bottom: .5rem;
+}
+
+.budget__value--bill{
+    font-size: 2.5rem;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.budget__value--amount{
+    font-size: 1.9rem;
+    color: #FFF;
+    margin-bottom: .5rem;
+}
+
+.dollar-sign{
+    color: #FFF;
+    font-size: 1.4rem;
+    margin-right: .5rem;
+}
+
+
+.budget__expense{
+    position: absolute;
+    top: 15rem;
+    right: 2rem;
+    padding: .5rem 3rem 2rem 3rem;
+    background-color: #252B43;
+    display: inline-block;
+    border-radius: .4rem;
+}
+
+.budget__expense--text{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    margin-bottom: .5rem;
+}
+
+.budget__expense--bill{
+    font-size: 2.5rem;
+    color: rgb(243, 74, 74);
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.budget__expense--amount{
+    font-size: 1.9rem;
+    color: #FFF;
+    margin-bottom: .5rem;
+}
+
+.budget__expense-percentage{
+    font-size: 2rem;
+    color: #FFF;
+}
+
+.budget__balance{
+    position: absolute;
+    top: 29.5rem;
+    right: 2rem;
+    padding: .5rem 3rem 2rem 2.5rem;
+    background-color: #252B43;
+    display: inline-block;
+    border-radius: .4rem;
+}
+
+.budget__balance--text{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    margin-bottom: .5rem;
+}
+
+.budget__balance-scale{
+    font-size: 2.5rem;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.budget__balance--amount{
+    font-size: 1.9rem;
+    color: #FFF;
+    margin-bottom: .5rem;
+}
+
+.budget__entry{
+    position: absolute;
+    left: 2rem;
+    top: 8rem;
+}
+
+.budget__entry--description{
+    padding: 1rem;
+    width: 19rem;
+    border-radius: 4px;
+    margin-right: .5rem;
+    background-color: #FFF;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.budget__entry--description:focus,
+.budget__entry--value:focus{
+    outline: none;
+}
+
+.budget__entry--value{
+    width: 9rem;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-right: .5rem;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+.budget__expense-container{
+    width: 42rem;
+    position: absolute;
+    top: 15rem;
+    left: 2rem;
+    padding: 1rem;
+    background-color: #252B43;
+    height: 30rem;
+    border-radius: 4px;
+}
+
+.budget__expense--title{
+    color: rgb(240, 29, 29);
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.item{
+    padding: .7rem;
+    border-bottom: 1px solid #c2bfbf;
+    background-color: rgb(96, 168, 250);
+}
+.item:first-child{ border-top: 1px solid #c2bfbf; }
+
+.item
+
+.item__description{
+    float: left;
+    font-size: 1.7rem;
+    color: rgb(248, 245, 245);
+}
+
+.item__value,
+.item__percentage{
+    float: left;
+    color: rgb(153, 37, 37);
+    font-size: 1.5rem;
+}
+
+.item__value,
+.item__percentage{
+    margin-right: 1rem;
+    transition: all .4s;
+}
+
+
+.right{
+    float: right;
+}
+
+.item__delete{
+    float: left;
+}
+
+.item__delete--btn{
+    font-size: 1.6rem;
+    color: rgb(153, 37, 37);
+    line-height: 1;
+    display: inline-block;
+    background: none;
+    cursor: pointer;
+    border: none;
+    display: none;
+    vertical-align: middle;
+}
+
+.item__delete--btn:focus{
+    outline: none;
+}
+
+.item:hover .item__delete--btn{ display: block; }
+.item:hover .item__value,
+.item:hover .item__percentage{
+    transform: translateX(-2rem);
+}
+
