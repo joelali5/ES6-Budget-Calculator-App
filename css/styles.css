@@ -26,6 +26,7 @@ body{
     margin: 0 auto;
     margin-top: 6rem;
     height: 50rem;
+    max-height: 50rem;
     border-radius: 3px;
 }
 
@@ -72,6 +73,15 @@ body{
     transition: all .3s;
 }
 
+.budget__input--btn{
+    font-size: 3.5rem;
+    color: #FFF;
+    vertical-align: middle;
+    font-weight: 100;
+    cursor: pointer;
+    transition: all .3s;
+}
+
 .budget__input--icon:focus{
     outline: none;
 }
@@ -81,6 +91,18 @@ body{
 }
 
 .budget__input--icon:active{
+    transform: translateY(.3rem);
+}
+
+.budget__input--btn:focus{
+    outline: none;
+}
+
+.budget__input--btn:hover{
+    transform: translateY(-.5rem);
+}
+
+.budget__input--btn:active{
     transform: translateY(.3rem);
 }
 
